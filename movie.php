@@ -7,7 +7,7 @@ class Movie {
     public $autore;
     public $trama;
     public $anno;
-    public $prezzoBiglietto;
+    public $eta;
     public $scontoEta = 5;
 
 
@@ -21,8 +21,19 @@ function __costruct($titolo, $autore, $trama, $anno ) {
     $this->anno = $anno;
   }
 
- 
+  // METODI
 
+  public function setAge($eta) {
+      $this->eta = $eta;
+  }
 
+  public function getScontoEta() {
+      if($this->eta > 75) {
+          $this->scontoeta = 40;
+      }
 
+       return $this->scontoeta;
+  }
 }
+
+
