@@ -57,3 +57,20 @@ function __construct($titolo, $autore, $trama, $anno ) {
 
 
   echo '<hr>';
+
+  // MOVIE 2
+
+
+  $movie2 = new Movie('Il Signore degli Anelli', 'Peter Jackson', 'Mentre Frodo e Sam, accompagnati da Gollum, proseguono il loro viaggio verso Monte Fato per distruggere l/anello, il resto della compagnia corre in soccorso di Rohan e Gondor, impegnati nella battaglia dei Campi del Pellenor..', '2004');
+
+
+  $movie2->setAge(82);
+
+  var_dump($movie2);
+
+
+  // SCONTO  
+
+  $scontoFilm = $movie2->getScontoEta();
+
+  echo "Lo sconto per la tua età è $scontoFilm% ";
